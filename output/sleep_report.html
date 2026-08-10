@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<title>Sleep Report</title>
+<style>
+body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; background: #f8fafc; color: #1e293b; }
+h1 { color: #1e40af; border-bottom: 2px solid #3b82f6; padding-bottom: 8px; }
+h2 { color: #1e3a5f; margin-top: 30px; }
+table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+th, td { border: 1px solid #cbd5e1; padding: 10px 14px; text-align: center; }
+th { background: #1e40af; color: white; }
+tr:nth-child(even) { background: #f1f5f9; }
+img { max-width: 100%; border: 1px solid #e2e8f0; border-radius: 6px; margin: 12px 0; }
+.metric { display: inline-block; background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px 24px; margin: 8px; text-align: center; min-width: 160px; }
+.metric .value { font-size: 1.6em; font-weight: bold; color: #1e40af; }
+.metric .label { font-size: 0.85em; color: #64748b; margin-top: 4px; }
+</style>
+</head>
+<body>
+<h1>Sleep Report</h1>
+
+<h2>Summary Metrics</h2>
+<div>
+  <div class="metric"><div class="value">1414 min</div><div class="label">Total Recording Time</div></div>
+  <div class="metric"><div class="value">472 min</div><div class="label">Total Sleep Time</div></div>
+  <div class="metric"><div class="value">93.7%</div><div class="label">Sleep Efficiency</div></div>
+  <div class="metric"><div class="value">434.5 min</div><div class="label">Sleep Onset Latency</div></div>
+  <div class="metric"><div class="value">66.0 min</div><div class="label">REM Latency</div></div>
+  <div class="metric"><div class="value">22</div><div class="label">Awakenings</div></div>
+</div>
+
+<h2>Hypnogram</h2>
+<img src="hypnogram.png" alt="Hypnogram">
+
+<h2>Sleep Stage Distribution</h2>
+<table>
+<tr><th>Stage</th><th>Duration (min)</th><th>Percentage</th></tr>
+<tr><td>W</td><td>942.5</td><td>199.7%</td></tr>
+<tr><td>N1</td><td>29.5</td><td>6.2%</td></tr>
+<tr><td>N2</td><td>186.5</td><td>39.5%</td></tr>
+<tr><td>N3</td><td>148.5</td><td>31.5%</td></tr>
+<tr><td>R</td><td>107.5</td><td>22.8%</td></tr>
+
+</table>
+<img src="stage_distribution.png" alt="Sleep Stage Distribution">
+
+<h2>EEG Power Spectral Density</h2>
+<img src="eeg_psd.png" alt="EEG PSD">
+
+</body>
+</html>

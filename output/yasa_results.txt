@@ -1,0 +1,18 @@
+YASA Sleep Staging Results
+==========================
+Accuracy      : 0.8310 (83.1%)
+Cohen's Kappa : 0.7071
+
+Classification Report:
+              precision    recall  f1-score   support
+
+        Wake       0.99      0.85      0.91      1885
+          N1       0.26      0.41      0.32        59
+          N2       0.68      0.92      0.78       373
+          N3       0.92      0.92      0.92       297
+         REM       0.35      0.53      0.42       215
+
+    accuracy                           0.83      2829
+   macro avg       0.64      0.73      0.67      2829
+weighted avg       0.88      0.83      0.85      2829
+
