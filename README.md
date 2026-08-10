@@ -8,6 +8,8 @@ Uses [Sleep-EDF Database](https://physionet.org/content/sleep-edfx/) from Physio
 - `SC4002E0-PSG.edf` — PSG recording (EEG, EOG, EMG, etc.)
 - `SC4002EC-Hypnogram.edf` — Expert-annotated sleep stages
 
+---
+
 ## Exercise A: Sleep Report (`sleep_report.py`)
 
 Generates an HTML sleep report containing:
@@ -27,6 +29,19 @@ python sleep_report.py \
 ```
 
 Output: `output/sleep_report.html`
+
+### Screenshots — Exercise A
+
+#### Hypnogram
+![Hypnogram](output/hypnogram.png)
+
+#### Sleep Stage Distribution
+![Sleep Stage Distribution](output/stage_distribution.png)
+
+#### EEG Power Spectral Density
+![EEG PSD](output/eeg_psd.png)
+
+---
 
 ## Exercise B: YASA Auto Sleep Staging (`yasa_staging.py`)
 
@@ -51,6 +66,16 @@ python yasa_staging.py \
 |--------|-------|
 | Accuracy | 83.1% |
 | Cohen's Kappa | 0.707 |
+
+### Screenshots — Exercise B
+
+#### Manual vs YASA Comparison Hypnogram
+![Comparison Hypnogram](output/comparison_hypnogram.png)
+
+#### Confusion Matrix
+![Confusion Matrix](output/confusion_matrix.png)
+
+---
 
 ## Environment
 
